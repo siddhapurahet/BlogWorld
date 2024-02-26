@@ -23,5 +23,6 @@
         "path": "^0.12.7",
         "pm2": "^5.3.0",
         "slugify": "^1.6.5"
-    }
+    },
+    "proxy": "http://localhost:5001"
 }
