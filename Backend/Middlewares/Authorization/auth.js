@@ -17,6 +17,7 @@ const getAccessToRoute = asyncErrorWrapper(async(req,res,next) =>{
     const accessToken = getAccessTokenFromHeader(req)
 
     const decoded = jwt.verify(accessToken,JWT_SECRET_KEY) ;
+    // console.log(decoded);
 
     const user = await User.findById(decoded.id)
    
